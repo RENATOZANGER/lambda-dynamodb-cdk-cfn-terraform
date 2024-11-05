@@ -1,4 +1,4 @@
-# lambda-dynamodb-cdk-cfn-terraform
+# lambda-dynamodb-cdk-cfn-terraform ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) ![AmazonDynamoDB](https://img.shields.io/badge/Amazon%20DynamoDB-4053D6?style=for-the-badge&logo=Amazon%20DynamoDB&logoColor=white)
 
 This project was created to implement an infrastructure that includes a Lambda with a public URL for inserting and retrieving data from DynamoDB, creating policies and roles, and creating DynamoDB.
 
