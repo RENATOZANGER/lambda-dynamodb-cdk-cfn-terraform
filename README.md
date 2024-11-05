@@ -45,6 +45,7 @@ Below is the example I made for using CDK with python:
   cd cdk_python # Access the folder cdk_python
   cdk init sample-app --language python # Initialize a new CDK project with a sample application using Python
   source .venv/bin/activate  # Activate the virtual environment on Linux or Mac
+  .venv\Scripts\activate.bat # Windows
   python.exe -m pip install --upgrade pip # Upgrade pip
   pip install -r requirements.txt # Install the packages
   ```
