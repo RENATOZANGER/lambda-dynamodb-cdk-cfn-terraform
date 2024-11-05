@@ -53,11 +53,13 @@ Below is the example I made for using CDK with python:
 CDK Main Commands
   
   ```bash
-  cdk synth # Compile the project
+  cdk synth # Optional -> Generate and View AWS CloudFormation Code
 
   cdk deploy # Deploy the code
 
   cdk destroy # Destroy the project
+
+  aws cloudformation delete-stack --stack-name CDKToolkit # Stack Bootstrap
    ```
 
 ### Preparing for CloudFormation and Terraform
