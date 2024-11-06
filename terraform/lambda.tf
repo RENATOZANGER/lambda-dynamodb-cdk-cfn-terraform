@@ -1,10 +1,10 @@
 #Create Lambda
 resource "aws_lambda_function" "lambda_function" {
+  depends_on = [aws_s3_object.upload_zip]
   function_name = var.function_name
   handler       = "lambda_function.lambda_handler"
   runtime       = "python3.12"
-  s3_bucket     = var.bucket_name
-  s3_key        = "lambda_function.zip"
+  filename      = data.archive_file.lambda_zip.output_path
   role          = aws_iam_role.lambda_execution_role.arn
 
   environment {

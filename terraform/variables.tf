@@ -3,11 +3,6 @@ variable "table_name" {
   default = "ProductsTable"
 }
 
-variable "bucket_name" {
-  type    = string
-  default = "<bucket-name>"
-}
-
 variable "function_name" {
   type    = string
   default = "Lambda_and_dynamodb"
