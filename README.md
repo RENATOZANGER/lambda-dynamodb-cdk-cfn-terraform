@@ -63,7 +63,7 @@ CDK Main Commands
    ```
 
 ### Preparing for CloudFormation and Terraform
-**_NOTE:_** For CloudFormation and Terraform, you need to zip the lambda_function.py code and upload it to the S3 bucket you created.
+**_NOTE:_** For CloudFormation you need to zip the lambda_function.py code and upload it to the S3 bucket you created.
   ```bash
   aws s3 mb s3://<bucket-name> # Create an S3 bucket to store the Lambda code
 
@@ -72,16 +72,7 @@ CDK Main Commands
   aws s3 cp lambda_function.zip s3://<bucket-name>/ # Upload zip to bucket
   ```
 
-After creating the bucket, change the bucket name in the files:
-- Terraform
-```bash
-# variables.tf
-variable "bucket_name" {
-  type    = string
-  default = "<bucket-name>"
-}
-```
-
+After creating the bucket, change:
 - CloudFormation
 ```bash
 # lambda_dynamodb.yaml
@@ -108,7 +99,7 @@ cd terraform # Access the folder terraform
 
 terraform init # Initialize Terraform
 
-terraform plan # To check the resources that will be created
+terraform plan # Optional. To check the resources that will be created
 
 terraform apply -auto-approve # Apply settings
 
