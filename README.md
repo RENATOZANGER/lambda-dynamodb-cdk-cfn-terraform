@@ -62,7 +62,7 @@ CDK Main Commands
   aws cloudformation delete-stack --stack-name CDKToolkit # Stack Bootstrap
    ```
 
-### Preparing for CloudFormation and Terraform
+### CloudFormation
 **_NOTE:_** For CloudFormation you need to zip the lambda_function.py code and upload it to the S3 bucket you created.
   ```bash
   aws s3 mb s3://<bucket-name> # Create an S3 bucket to store the Lambda code
@@ -73,7 +73,6 @@ CDK Main Commands
   ```
 
 After creating the bucket, change:
-- CloudFormation
 ```bash
 # lambda_dynamodb.yaml
   BucketName:
@@ -81,10 +80,7 @@ After creating the bucket, change:
     Default: "<bucket-name>"
     Description: Bucket Name
 ```
-
-
-### CloudFormation
-
+- Commands to use in cloudformation
 ```bash
   cd cloudFormation # Access the folder cloudFormation
 
