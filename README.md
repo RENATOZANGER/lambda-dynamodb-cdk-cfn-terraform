@@ -30,7 +30,7 @@ Validate aws access with an example to get the account_id
   aws sts get-caller-identity 
   ```
 
-### Using CDK with Python
+## Using CDK with Python
 **_NOTE:_** Don't forget to run the `npm install -g aws-cdk` command to install the CDK globally.
 After installation, you can use commands such as cdk init, cdk deploy, cdk synth, and cdk destroy to create, modify, and destroy infrastructure stacks in your AWS account.
 
@@ -62,7 +62,7 @@ CDK Main Commands
   aws cloudformation delete-stack --stack-name CDKToolkit # Stack Bootstrap
    ```
 
-### CloudFormation
+## CloudFormation
 **_NOTE:_** For CloudFormation you need to zip the lambda_function.py code and upload it to the S3 bucket you created.
   ```bash
   aws s3 mb s3://<bucket-name> # Create an S3 bucket to store the Lambda code
@@ -89,7 +89,7 @@ After creating the bucket, change:
   aws cloudformation delete-stack --stack-name my-stack # Destroy the stack
    ```
 
-### Terraform
+## Terraform
 ```bash
 cd terraform # Access the folder terraform
 
